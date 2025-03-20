@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:newslt/core/utils/app_styles.dart';
 import 'package:newslt/core/utils/common_helper.dart';
+import 'package:newslt/core/utils/screen_size.dart';
 
 // ignore: must_be_immutable
 class CustomButton extends StatelessWidget {
@@ -31,7 +32,7 @@ class CustomButton extends StatelessWidget {
         ),
         width: width??double.infinity,
         height: height?? MediaQuery.sizeOf(context).height*0.07,
-        child: isLoading ? showLoading(context,Colors.white,16): Center(child: Text(text,style: Styles.ralewayBold16(context).copyWith(color: txtColor),)),
+        child: isLoading ? showLoading(context,Colors.white,16): Center(child: Text(text,style: Styles.ralewayBold16(context).copyWith(color: txtColor,fontSize: ScreenSize.getResponsiveFontSize(context, 20)),)),
       ),
     );
   }
