@@ -5,7 +5,6 @@ import 'package:flutter_pw_validator/flutter_pw_validator.dart';
 import 'package:go_router/go_router.dart';
 import 'package:newslt/config/routes.dart';
 import 'package:newslt/core/extentions/int_extentions.dart';
-import 'package:newslt/core/utils/app_styles.dart';
 import 'package:newslt/core/utils/common_helper.dart';
 import 'package:newslt/core/utils/constants.dart';
 import 'package:newslt/presentations/cubits/auth/password_cases/password_cases_cubit.dart';

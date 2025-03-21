@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:newslt/config/routes.dart';
 import 'package:newslt/core/utils/bloc_observer.dart';
 import 'package:newslt/core/utils/cache_helper.dart';
@@ -10,11 +11,16 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:newslt/presentations/cubits/auth/create_user/create_user_cubit.dart';
 import 'package:newslt/presentations/cubits/auth/varify_email/varify_email_cubit.dart';
+import 'package:newslt/presentations/cubits/get_news/get_news_cubit.dart';
 import 'package:newslt/presentations/cubits/toggle_inerests/toggle_inerests_cubit.dart';
 
 
 void main() async{
   WidgetsFlutterBinding.ensureInitialized();
+   await dotenv.load(
+    fileName: "keys.env"
+   );
+   
   await Firebase.initializeApp(
 );
 Bloc.observer = MyBlocObserver();
@@ -36,6 +42,7 @@ class NewslyApp extends StatelessWidget {
         BlocProvider(create: (context)=> CreateUserCubit()),
         BlocProvider(create: (context)=> ToggleInerestsCubit()),
          BlocProvider(create: (context)=> VerifyEmailCubit()),
+          BlocProvider(create: (context)=> GetNewsCubit()),
 
       ],
       child: MaterialApp.router(

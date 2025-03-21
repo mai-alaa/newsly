@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:intl/intl.dart';
 import 'package:newslt/core/utils/app_styles.dart';
 import 'package:newslt/core/utils/screen_size.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
@@ -64,14 +65,12 @@ Future<bool> checkConnection() async {
 }
  void showErrorToasts(Map<String, List<String>>? errors, String generalError) {
     if (errors != null && errors.isNotEmpty) {
-      // Show field-specific errors
       errors.forEach((field, messages) {
         for (var message in messages) {
           showToast(message, Colors.red);
         }
       });
     } else {
-      // Show general error message
       showToast(generalError, Colors.red);
     }
   }
@@ -81,3 +80,17 @@ Future<bool> checkConnection() async {
   );
   return emailRegex.hasMatch(email);
 }
+String formatDate(String publishedAt) {
+    try {
+      final dateTime = DateTime.parse(publishedAt);
+      return DateFormat('MMMM d, yyyy').format(dateTime); 
+    } catch (e) {
+      return publishedAt; 
+    }
+  }
+
+  String estimateReadTime(String content) {
+    final wordCount = content.split(' ').length;
+    final readTimeMinutes = (wordCount / 200).ceil();
+    return '$readTimeMinutes min read';
+  }
