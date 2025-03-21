@@ -33,8 +33,10 @@ migrate_working_dir/
 .pub-cache/
 .pub/
 /build/
+
 .google-services.json
 .GoogleService-Info.plist
+
 
 
 
