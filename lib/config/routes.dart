@@ -22,10 +22,7 @@ static final GoRouter router = GoRouter(
   initialLocation: signUpScreen,
   routes: <RouteBase>[
  
-  // GoRoute(path: homeScreen,
-  // builder: (context, state) => const HomeScreen(),
-  // ),
-
+  
    GoRoute(path: signUpScreen,
   builder: (context, state) =>  SignUpScreen(),
   ),

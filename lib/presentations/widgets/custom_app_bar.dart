@@ -1,5 +1,6 @@
 // header.dart
 import 'package:flutter/material.dart';
+import 'package:newslt/core/utils/app_styles.dart';
 
 class CustomAppBar extends StatelessWidget {
   final String title;
@@ -20,11 +21,7 @@ class CustomAppBar extends StatelessWidget {
         children: [
           Text(
             title,
-            style: const TextStyle(
-              fontSize: 24,
-              fontWeight: FontWeight.bold,
-              color: Colors.black,
-            ),
+            style: Styles.relwayBold28(context)
           ),
           Icon(Icons.newspaper),
         ],

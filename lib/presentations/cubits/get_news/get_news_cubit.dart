@@ -15,21 +15,19 @@ class GetNewsCubit extends Cubit<GetNewsStates> {
   NewsDataModel? articles;
   String? selectedCategory;
   
-  // Add this method
   void changeCategory(String category) {
     if (selectedCategory != category) {
       selectedCategory = category;
-      emit(GetNewsLoadingState()); // Emit loading state to trigger UI update
+      emit(GetNewsLoadingState()); 
       getNews(category);
     }
   }
 
   Future<void> getNews(String? category) async {
     String apiKey = dotenv.get('API_KEY');
-    print('API_KEY: $apiKey');
+    log('API_KEY: $apiKey');
     String url = '$baseApi/top-headlines?country=us&category=$category&apiKey=$apiKey';
     
-    // Only update selectedCategory if it's being called directly
     if (selectedCategory != category) {
       selectedCategory = category;
     }

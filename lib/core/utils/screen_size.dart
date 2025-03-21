@@ -13,7 +13,6 @@ class ScreenSize {
 
 
 
-     // Block sizes for responsive calculations
     blockSizeHorizontal = screenWidth / 100;
     blockSizeVertical = screenHeight / 100;
     getScaleFactor(context);

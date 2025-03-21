@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:newslt/core/utils/app_styles.dart';
 
 // ignore: must_be_immutable
 class CategoryCard extends StatelessWidget {
@@ -40,11 +41,8 @@ class CategoryCard extends StatelessWidget {
                             Center(
                               child: Text(
                                 categoryName,
-                                style: TextStyle(
-                                  color: categoryTextColor,
-                                  fontWeight: FontWeight.w600,
-                                  fontSize: 16,
-                                ),
+                                style: Styles.ralewayBold16(context).copyWith(color: categoryTextColor,)
+                             
                               ),
                             ),
                             Positioned(

@@ -9,7 +9,7 @@ abstract class Styles{
     return TextStyle(
       fontWeight: FontWeight.bold,
       color: Colors.black,
-      fontSize: ScreenSize.getResponsiveFontSize(context, 16), // Base font size is 16
+      fontSize: ScreenSize.getResponsiveFontSize(context, 16), 
      
     );
   }
@@ -18,7 +18,7 @@ abstract class Styles{
     return TextStyle(
       fontWeight: FontWeight.bold,
       color: kPrimaryColor,
-      fontSize: ScreenSize.getResponsiveFontSize(context, 20), // Base font size is 18
+      fontSize: ScreenSize.getResponsiveFontSize(context, 20), 
     );
   }
 
@@ -26,7 +26,7 @@ abstract class Styles{
     return TextStyle(
       fontWeight: FontWeight.bold,
       color: kPrimaryColor,
-      fontSize: ScreenSize.getResponsiveFontSize(context, 14), // Base font size is 12
+      fontSize: ScreenSize.getResponsiveFontSize(context, 14), 
        overflow: TextOverflow.ellipsis,
       
     );
@@ -36,7 +36,7 @@ abstract class Styles{
     return TextStyle(
       fontWeight: FontWeight.bold,
       color: kPrimaryColor,
-      fontSize: ScreenSize.getResponsiveFontSize(context, 34), // Base font size is 34
+      fontSize: ScreenSize.getResponsiveFontSize(context, 34), 
     );
   }
 
@@ -44,7 +44,15 @@ abstract class Styles{
     return TextStyle(
       fontWeight: FontWeight.w400,
       color: kPrimaryColor,
-      fontSize: ScreenSize.getResponsiveFontSize(context, 16), // Base font size is 16
+      fontFamily: 'Raleway',
+    );
+  }
+
+  static TextStyle relwayReg22(BuildContext context) {
+    return TextStyle(
+      fontSize: ScreenSize.getResponsiveFontSize(context, 22),
+      fontWeight: FontWeight.w400,
+      color: kPrimaryColor,
       fontFamily: 'Raleway',
     );
   }
@@ -53,9 +61,45 @@ abstract class Styles{
     return TextStyle(
       fontWeight: FontWeight.bold,
       color: Colors.black,
-      fontSize: ScreenSize.getResponsiveFontSize(context, 26), // Base font size is 26
+      fontSize: ScreenSize.getResponsiveFontSize(context, 26), 
       fontFamily: 'Raleway',
     );
   }
-
+static TextStyle relwayBold14 (BuildContext context){
+return TextStyle(
+                      fontSize: ScreenSize.getResponsiveFontSize(context, 14),
+                      color: Colors.grey,
+                      fontWeight: FontWeight.bold,
+                      fontFamily: 'Raleway',
+                    );
+}
+    static TextStyle relwayBold18(BuildContext context) {
+    return TextStyle(
+                      fontSize: ScreenSize.getResponsiveFontSize(context, 18),
+                      fontWeight: FontWeight.bold,
+                      color: Colors.black,
+                      fontFamily: 'Raleway',
+                    );
+  }
+ static TextStyle relwayReg14(BuildContext context) {
+    return  TextStyle(
+                      fontSize: 14,
+                      color: Colors.grey,
+                      fontFamily: 'Raleway',
+                    );
+  }
+   static TextStyle relwayReg12(BuildContext context) {
+    return  TextStyle(
+                      fontSize: 12,
+                      color: Colors.grey,
+                    );
+  }
+    static TextStyle relwayBold28(BuildContext context) {
+    return TextStyle(
+      fontWeight: FontWeight.bold,
+      color: Colors.black,
+      fontSize: ScreenSize.getResponsiveFontSize(context, 28), 
+      fontFamily: 'Raleway',
+    );
+  }
 }

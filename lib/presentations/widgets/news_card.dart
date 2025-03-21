@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:newslt/core/extentions/int_extentions.dart';
+import 'package:newslt/core/utils/app_styles.dart';
 
 class NewsCard extends StatelessWidget {
   final String category;
@@ -49,47 +50,35 @@ class NewsCard extends StatelessWidget {
                     )
                   : const Center(child: Text('img')),
             ),
-            const SizedBox(width: 12),
+            12.toWidth,
             Expanded(
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
                     category,
-                    style: const TextStyle(
-                      fontSize: 12,
-                      color: Colors.grey,
-                      fontWeight: FontWeight.bold,
-                    ),
+                    style: Styles.relwayBold14(context)
+                    
+                    
                   ),
                    4.toHeight,
                   Text(
                     title,
-                    style: const TextStyle(
-                      fontSize: 16,
-                      fontWeight: FontWeight.bold,
-                      color: Colors.black,
-                    ),
+                    style: Styles.relwayBold18(context),
                     maxLines: 2,
                     overflow: TextOverflow.ellipsis,
                   ),
                   4.toHeight,
                   Text(
                     subtitle,
-                    style: const TextStyle(
-                      fontSize: 14,
-                      color: Colors.grey,
-                    ),
+                    style: Styles.relwayReg14(context),
                     maxLines: 2,
                     overflow: TextOverflow.ellipsis,
                   ),
                    4.toHeight,
                   Text(
                     '$date • $readTime',
-                    style:  TextStyle(
-                      fontSize: 12,
-                      color: Colors.grey,
-                    ),
+                    style: Styles.relwayReg12(context)
                   ),
                 ],
               ),

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:newslt/core/utils/app_styles.dart';
 
 class CategoryTabs extends StatelessWidget {
   final List<String> categories;
@@ -25,11 +26,13 @@ class CategoryTabs extends StatelessWidget {
               onTap: () => onCategoryTap(category), 
               child: Text(
                 category,
-                style: TextStyle(
-                  fontSize: 16,
-                  fontWeight: isSelected ? FontWeight.bold : FontWeight.normal,
+                style: Styles.relwayReg22(context).copyWith(
+                   fontWeight: isSelected ? FontWeight.bold : FontWeight.normal,
                   color: isSelected ? Colors.black : Colors.grey,
-                ),
+
+                )
+                
+              
               ),
             ),
           );
