@@ -4,7 +4,7 @@ import 'package:newslt/data/models/interest_category_model.dart';
 
 final List<InterestCategory> categories = [
     InterestCategory(
-      id: 'tech',
+      id: 'technology',
       name: 'Technology',
       color: const Color(0xffE3F2FD),
       borderColor: const Color(0xffBBDEFB),

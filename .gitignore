@@ -3,6 +3,7 @@
 *.log
 *.pyc
 *.swp
+*.env
 .DS_Store
 .atom/
 .build/
@@ -32,8 +33,11 @@ migrate_working_dir/
 .pub-cache/
 .pub/
 /build/
-GoogleService-Info.plist
-google-services.json
+.google-services.json
+.GoogleService-Info.plist
+
+
+
 
 # Symbolication related
 app.*.symbols
