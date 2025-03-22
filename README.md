@@ -111,4 +111,9 @@ newslt/
 - ** Redirect page: ![2025-03-22 02-00-43 High Res Screenshot](https://github.com/user-attachments/assets/cf76d0af-6929-4ad5-8e78-64fb1d29d467)
 -** Home Page: ![2025-03-22 02-01-06 High Res Screenshot](https://github.com/user-attachments/assets/0cdead8c-d570-483f-9abc-66d655b19d74)
 
+**App Demo---->
+
+
+
+https://github.com/user-attachments/assets/82b642f8-98f5-490f-8eb7-ba50dde5a3af
 
