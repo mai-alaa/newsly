@@ -4,7 +4,7 @@ A Flutter-based news application that allows users to register, select their int
 
 ## Features
 
-- **Splash Screen with Delay**: Displays a branded splash screen with a 2-second delay before navigating to the main app.
+- **Native Splash Screen with Delay**: Displays a branded splash screen with a 2-second delay before navigating to the main app.
 - **User Registration**: Sign up with name, email, and password, including email verification.
 - **Verify Email Address**: After registration, users receive a verification email and are guided through the verification process.
   - Sends a verification email to the user's email address.
