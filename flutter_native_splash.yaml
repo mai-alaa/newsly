@@ -1,11 +1,13 @@
 flutter_native_splash:
   android: true
-  ios: true 
+  ios: false
+  
 
   
   background_image: "assets/images/background.png"
-  image: "assets/images/spla_logo.png"
+  image: "assets/png/newsly_logo.png"
+  
 
   android_12:
-    background_image: "assets/images/background.png"
-    image: "assets/png/app_splash.png"
+    color: "#85144b"
+    image: "assets/png/newsly_logo.png"

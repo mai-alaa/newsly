@@ -22,30 +22,18 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" image="LaunchBackground" translatesAutoresizingMaskIntoConstraints="NO" id="tWc-Dq-wcI">
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LaunchImage" translatesAutoresizingMaskIntoConstraints="NO" id="oRO-B0-Acr">
-                                <rect key="frame" x="66" y="268.66666666666663" width="261.33333333333331" height="314.66666666666663"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="newslylogo 1" translatesAutoresizingMaskIntoConstraints="NO" id="BY1-Ym-dri">
+                                <rect key="frame" x="121.66666666666669" y="351" width="150" height="150"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stat Informed, Stay Ahead" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o0b-pm-W9V">
-                                <rect key="frame" x="23" y="588.33333333333337" width="347" height="27"/>
-                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="23"/>
-                                <color key="textColor" red="1" green="0.67925045910000004" blue="0.89912452369999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="oRO-B0-Acr" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="3dz-th-c1S"/>
-                            <constraint firstItem="oRO-B0-Acr" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="DUz-I6-Y6p"/>
-                            <constraint firstItem="oRO-B0-Acr" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="GQf-hx-L0l"/>
+                            <constraint firstItem="BY1-Ym-dri" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="0Zx-8H-8Ee"/>
+                            <constraint firstItem="BY1-Ym-dri" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="Mt3-Nv-2QH"/>
                             <constraint firstItem="tWc-Dq-wcI" firstAttribute="bottom" secondItem="Ze5-6b-2t3" secondAttribute="bottom" id="RPx-PI-7Xg"/>
-                            <constraint firstItem="oRO-B0-Acr" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="SUa-F0-WbD"/>
                             <constraint firstItem="tWc-Dq-wcI" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="SdS-ul-q2q"/>
                             <constraint firstAttribute="trailing" secondItem="tWc-Dq-wcI" secondAttribute="trailing" id="Swv-Gf-Rwn"/>
-                            <constraint firstItem="oRO-B0-Acr" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="VFB-fx-NQ7"/>
-                            <constraint firstItem="oRO-B0-Acr" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="aOH-QD-rFu"/>
                             <constraint firstItem="tWc-Dq-wcI" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="kV7-tw-vXt"/>
-                            <constraint firstItem="o0b-pm-W9V" firstAttribute="centerX" secondItem="oRO-B0-Acr" secondAttribute="centerX" id="luF-IN-20n"/>
-                            <constraint firstItem="o0b-pm-W9V" firstAttribute="top" secondItem="oRO-B0-Acr" secondAttribute="bottom" constant="5" id="zJZ-5K-D4l"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -56,6 +44,6 @@
     </scenes>
     <resources>
         <image name="LaunchBackground" width="430" height="932"/>
-        <image name="LaunchImage" width="261.33334350585938" height="314.66665649414062"/>
+        <image name="newslylogo 1" width="150" height="150"/>
     </resources>
 </document>

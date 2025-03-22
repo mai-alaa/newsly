@@ -17,6 +17,7 @@ import 'package:newslt/presentations/cubits/toggle_inerests/toggle_inerests_cubi
 
 void main() async{
   WidgetsFlutterBinding.ensureInitialized();
+    // await Future.delayed(Duration(seconds: 2));
    await dotenv.load(
     fileName: "keys.env"
    );
