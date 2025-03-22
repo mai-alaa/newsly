@@ -104,10 +104,9 @@ newslt/
 └── README.md                 # Project documentation
 
 ** App Screens
-- ** Splash Screen :
+- ** Splash Screen : ![WhatsApp Image 2025-03-22 at 5 07 57 AM](https://github.com/user-attachments/assets/b4654a71-9a29-49e5-a50e-cd40a7f8818c)
 - ** SignUp Screen : ![](https://github.com/user-attachments/assets/131ad2aa-26e3-4c97-8623-244135035de2)
 - ** Choose Intersts Page: ![2025-03-22 02-00-34 High Res Screenshot](https://github.com/user-attachments/assets/3d122ad9-3ef6-4035-9a04-f12349a174ff)
-
 - ** Varify email : ![](https://github.com/user-attachments/assets/c4049fe5-aaf8-4179-81f4-e4c4a7a1aa46)
 - ** Redirect page: ![2025-03-22 02-00-43 High Res Screenshot](https://github.com/user-attachments/assets/cf76d0af-6929-4ad5-8e78-64fb1d29d467)
 -** Home Page: ![2025-03-22 02-01-06 High Res Screenshot](https://github.com/user-attachments/assets/0cdead8c-d570-483f-9abc-66d655b19d74)
